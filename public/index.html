@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Competidores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Registro de Competidores</h1>
+
+<form id="competidorForm">
+    <label for="nadador">Nombre del Nadador:</label>
+    <input type="text" id="nadador" name="nadador" required><br><br>
+
+    <label for="estilo">Estilo:</label>
+    <select id="estilo" name="estilo" required>
+        <option value="pecho">Pecho</option>
+        <option value="crol">Crol</option>
+        <option value="espalda">Espalda</option>
+        <option value="mariposa">Mariposa</option>
+    </select><br><br>
+
+    <label for="distancia">Distancia (metros):</label>
+    <input type="number" id="distancia" name="distancia" required><br><br>
+
+    <button type="submit">Registrar Competidor</button>
+</form>
+
+<button id="iniciarBtn">Iniciar Temporizadores</button>
+
+<div id="botonesTemporizadores">
+    <button id="detener1">Detener Temporizador 1: 0s</button>
+    <button id="detener2">Detener Temporizador 2: 0s</button>
+    <button id="detener3">Detener Temporizador 3: 0s</button>
+    <button id="detener4">Detener Temporizador 4: 0s</button>
+    <button id="detener5">Detener Temporizador 5: 0s</button>
+</div>
+
+<button id="cargarCarreraBtn">Cargar Carrera</button>
+
+<script src="script.js"></script>
+</body>
+</html>
